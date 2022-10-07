@@ -33,11 +33,13 @@ void main() {
 
   Deck deck = Deck(populateCards(cards));
   deck.shuffle();
+  print('---------Displaying Cards---------');
   deck.printCards();
 
   print('-----------------------');
   List<Card> suitedCards = deck.cardsWithSuit('Diamonds');
   Deck suitedDeck = Deck(suitedCards);
   suitedDeck.shuffle();
+  print('---------Displaying Cards---------');
   suitedDeck.printCards();
 }
