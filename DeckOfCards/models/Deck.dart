@@ -12,6 +12,7 @@ class Deck {
 
   void shuffle() {
     _cards.shuffle();
+    print('The cards have been shuffled');
   }
 
   Card _dummyCard = Card("XXXXXX", "XXXXXX"); //For wrong input
@@ -32,6 +33,7 @@ class Deck {
           _suitfltCards.add(Card(card.suit_name, card.value));
         }
       }
+      print('The deck has been filtered by suit: ${suit.suit_name}');
     } else {
       _suitfltCards.add(_dummyCard);
       print('$suit_name Card/Suit DOES NOT exists');
